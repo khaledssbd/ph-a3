@@ -15,11 +15,19 @@
        <!-- font awesome kits link -->
        <script src="https://kit.fontawesome.com/6584c82a89.js" crossorigin="anonymous"></script>
        <style>
-              .color-primary {
+              .color-primary-black {
+                     color: #131318;
+              }
+
+              .color-primary-red {
                      color: #FF4240;
               }
 
-              .bg-primary {
+              .bg-primary-black {
+                     background-color: #131318;
+              }
+
+              .bg-primary-red {
                      background-color: #FF4240;
               }
 
@@ -30,8 +38,9 @@
        </style>
 </head>
 
-<body class="lg:mx-[135px] font-manrope">
+<body class=" mx-5 lg:mx-[135px] mt-[1rem] lg:mt-[3.375rem] font-manrope">
        <header>
+              <!-- Navigation section here -->
               <div class="navbar bg-base-100">
                      <div class="navbar-start">
                             <div class="dropdown">
@@ -44,18 +53,21 @@
                                    </div>
                                    <ul tabindex="0"
                                           class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                          <li><a><span class="color-primary">Home</span></a></li>
+                                          <li><a><span class="color-primary-red">Home</span></a></li>
                                           <li><a>About</a></li>
                                           <li><a>Pages</a></li>
                                           <li><a>Blog</a></li>
                                           <li><a>Contact</a></li>
                                    </ul>
                             </div>
-                            <a class="btn btn-ghost text-xl pr-0 mr-0">Hockey<sup class="color-primary pr-0 mr-0">,</sup>s</a>
+                            <a class="btn btn-ghost text-xl lg:text-4xl">
+                                   <h3 class="color-primary-black font-extrabold">Hockey<span
+                                                 class="color-primary-red">'</span>s</h3>
+                            </a>
                      </div>
                      <div class="navbar-center hidden lg:flex">
-                            <ul class="menu menu-horizontal px-1">
-                                   <li><a><span class="color-primary">Home</span></a></li>
+                            <ul class="menu menu-horizontal px-1 text-base font-normal text-[#424247]">
+                                   <li><a><span class="color-primary-red">Home</span></a></li>
                                    <li><a>About</a></li>
                                    <li><a>Pages</a></li>
                                    <li><a>Blog</a></li>
@@ -64,12 +76,144 @@
                      </div>
                      <div class="navbar-end">
                             <i class="fa-solid hidden lg:flex fa-magnifying-glass"></i>
-                            <a class="btn bg-primary text-white ml-6">Get Ticket</a>
+                            <a
+                                   class="btn bg-primary-red text-white text-sm lg:text-lg font-bold ml-6 round-[0.5rem] w-24 lg:w-[125px] p-0">Get
+                                   Ticket</a>
                      </div>
               </div>
        </header>
        <main>
+              <!-- Carousel Section here -->
+              <div class="flex flex-col">
+                     <div class="carousel w-full mt-16 z-0">
+                            <div id="slide1" class="carousel-item relative w-full">
+                                   <img src="Images/1.png" class="w-full" />
+                                   <div
+                                          class="absolute flex justify-center  transform -translate-y-1/2 left-5 right-5 top-1/2 lg:justify-start mt-[3rem] lg:mt-[18rem] lg:ml-[4rem]">
+                                          <a href="#slide4"
+                                                 class="btn btn-circle text-white bg-primary-black border-0">❮</a>
+                                          <a href="#slide2"
+                                                 class="btn btn-circle text-white bg-primary-black ml-[1rem] border-0">❯</a>
+                                   </div>
+                            </div>
+                            <div id="slide2" class="carousel-item relative w-full">
+                                   <img src="Images/2.png" class="w-full" />
+                                   <div
+                                          class="absolute flex justify-center  transform -translate-y-1/2 left-5 right-5 top-1/2 lg:justify-start mt-[3rem] lg:mt-[18rem] lg:ml-[4rem]">
+                                          <a href="#slide1"
+                                                 class="btn btn-circle text-white bg-primary-black border-0">❮</a>
+                                          <a href="#slide3"
+                                                 class="btn btn-circle text-white bg-primary-black ml-[1rem] border-0">❯</a>
+                                   </div>
+                            </div>
+                            <div id="slide3" class="carousel-item relative w-full">
+                                   <img src="Images/3.png" class="w-full" />
+                                   <div
+                                          class="absolute flex justify-center  transform -translate-y-1/2 left-5 right-5 top-1/2 lg:justify-start mt-[3rem] lg:mt-[18rem] lg:ml-[4rem]">
+                                          <a href="#slide2"
+                                                 class="btn btn-circle text-white bg-primary-black border-0">❮</a>
+                                          <a href="#slide4"
+                                                 class="btn btn-circle text-white bg-primary-black ml-[1rem] border-0">❯</a>
+                                   </div>
+                            </div>
+                            <div id="slide4" class="carousel-item relative w-full">
+                                   <img src="Images/4.png" class="w-full" />
+                                   <div
+                                          class="absolute flex justify-center  transform -translate-y-1/2 left-5 right-5 top-1/2 lg:justify-start mt-[3rem] lg:mt-[18rem] lg:ml-[4rem]">
+                                          <a href="#slide3"
+                                                 class="btn btn-circle text-white bg-primary-black border-0">❮</a>
+                                          <a href="#slide1"
+                                                 class="btn btn-circle text-white bg-primary-black ml-[1rem] border-0">❯</a>
+                                   </div>
+                            </div>
+                     </div>
 
+                     <div
+                            class="bg-primary-black p-4 lg:p-8 gap-2 lg:gap-4 rounded-xl lg:rounded-2xl w-auto lg:w-[35.375rem] mt-6 lg:-mt-48 ml-0 lg:ml-[38rem] lg:z-10">
+                            <h3 class="text-white text-[1.125rem] lg:text-2xl font-extrabold pb-4">
+                                   Meet all the heroes from the field
+                            </h3>
+                            <h5 class="text-[#ffffff99] text-sm lg:text-base font-medium ">
+                                   Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                                   Purus
+                                   urna in sit nullam proin.
+                            </h5>
+                     </div>
+              </div>
+
+              <!-- horizontal line -->
+              <hr class="border-dashed mt-10 lg:mt-24 mb-6 lg:mb-8 color-primary-black">
+              <!-- Professional Hockeys Club section here-->
+              <div class="text-center">
+                     <h3 class="color-primary-black text-[1.375rem] font-extrabold">
+                            Professional Hockeys Club
+                     </h3>
+                     <p
+                            class="color-primary-black text-[0.875rem] font-medium mt-4 lg:mt-6 mb-6 lg:mb-8 lg:w-[37rem] mx-auto">
+                            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus
+                            urna in
+                            sit nullam proin.
+                     </p>
+              </div>
+              <!-- horizontal line -->
+              <hr class="border-dashed mb-6 lg:mb-12 color-primary-black">
+
+              <!-- Radial progress here -->
+
+              <section class="flex flex-col lg:flex-row justify-around m-auto gap-4 mb-10 lg:mb-24">
+                     <div class="flex flex-col items-center w-72">
+                            <div class="radial-progress text-[#ff4240]" style="--value:87;" role="progressbar">87%</div>
+                            <h3 class="color-primary-black text-xl font-semibold mt-6 mb-4">
+                                   Prayer Facility
+                            </h3>
+                            <h5 class="text-[#13131899] text-base font-normal text-center">
+                                   Amet consectetur. Condimentum dignissim adipiscing .
+                            </h5>
+                     </div>
+                     <div class="flex flex-col items-center w-72">
+                            <div class="radial-progress text-[#49d293]" style="--value:95;" role="progressbar">95%</div>
+                            <h3 class="color-primary-black text-xl font-semibold mt-6 mb-4">
+                                   Experienced Coach
+                            </h3>
+                            <h5 class="text-[#13131899] text-base font-normal text-center">
+                                   Amet consectetur. Condimentum dignissim adipiscing .
+                            </h5>
+                     </div>
+                     <div class="flex flex-col items-center w-72">
+                            <div class="radial-progress text-[#ffb546]" style="--value:90;" role="progressbar">90%</div>
+                            <h3 class="color-primary-black text-xl font-semibold mt-6 mb-4">
+                                   Senior Player
+                            </h3>
+                            <h5 class="text-[#13131899] text-base font-normal text-center">
+                                   Amet consectetur. Condimentum dignissim adipiscing .
+                            </h5>
+                     </div>
+                     <div class="flex flex-col items-center w-72">
+                            <div class="radial-progress text-[#4c8df1]" style="--value:80;" role="progressbar">80%</div>
+                            <h3 class="color-primary-black text-xl font-semibold mt-6 mb-4">
+                                   Training Ground
+                            </h3>
+                            <h5 class="text-[#13131899] text-base font-normal text-center">
+                                   Amet consectetur. Condimentum dignissim adipiscing .
+                            </h5>
+                     </div>
+              </section>
+              <!-- horizontal line -->
+              <hr class="border-dashed mt-10 lg:mt-24 mb-6 lg:mb-8 color-primary-black">
+              <!-- Program Sections here -->
+              <div class="text-center">
+                     <h3 class="color-primary-black text-[1.375rem] font-extrabold">
+                            Program Sections
+                     </h3>
+                     <p
+                            class="color-primary-black text-[0.875rem] font-medium mt-4 lg:mt-6 mb-6 lg:mb-8 lg:w-[37rem] mx-auto">
+                            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus
+                            urna in sit nullam proin.
+                     </p>
+              </div>
+              <!-- horizontal line -->
+              <hr class="border-dashed my-6 lg:mt-8 lg:mb-12 color-primary-black">
+              <!-- 3 image and text pare here -->
        </main>
        <footer>
 
